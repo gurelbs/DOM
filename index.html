@@ -6,7 +6,7 @@
     <title>DOM</title>
     <style>
         .btnDiv{
-            background: rgba(0, 0, 0, 0.746);color: white;width: 100%;position: fixed;bottom: 0%;text-align: center;padding: 3rem 0;border-radius: 50% 50% 0 0;
+            background: rgba(0, 0, 0, 0.746);color: white;width: 100%;height: 80vh; position: sticky;top: 50%;text-align: center;padding: 3rem 0;border-radius: 50% 50% 0 0;
         }
         .btnDiv button{
             border: 1px double orange;border-radius: 7px;color: white;padding: 1rem 2rem;font-size: 1.2rem;font-weight: 100;background-color: transparent;
@@ -25,7 +25,12 @@
         </div>    
     </div>
 
+    <div style="height: 20vh;color: black;color: white;text-align: center;">
+        <h1 id="h1">הגדל אותי!</h1>
+        <button onclick="{increaseBtn()}" class="plus">+</button>        
+        <button onclick="{decreaseBtn()}" class="minus">-</button>        
 
+    </div>
     <script src="./app.js"></script>
 </body>
 </html>
